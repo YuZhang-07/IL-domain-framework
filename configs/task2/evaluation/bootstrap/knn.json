@@ -1,0 +1,18 @@
+{
+  "task": "task2",
+  "analysis": "protein_cluster_bootstrap",
+  "model": "knn",
+  "input": {
+    "result_dir": null
+  },
+  "output": {
+    "directory": null
+  },
+  "parameters": {
+    "n_bootstrap": 2000,
+    "seed": 42,
+    "confidence": 0.95,
+    "max_redraw": 10000,
+    "consistency_tol": 1e-08
+  }
+}

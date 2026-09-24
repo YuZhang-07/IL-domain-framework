@@ -1,0 +1,67 @@
+{
+  "task": "task2",
+  "model": "linear_svm",
+  "data": {
+    "path": "data/task2/proid_1_2_feature_labels_standard.csv"
+  },
+  "output": {
+    "root": "results/task2/linear_svm"
+  },
+  "runtime": {
+    "n_jobs": -1
+  },
+  "parameters": {
+    "RANDOM_SEED": 42,
+    "N_FOLDS": 5,
+    "N_TRIALS": 50,
+    "INNER_N_SPLITS": 5,
+    "INNER_VALID_SIZE": 0.2,
+    "INNER_MAX_RETRIES": 50,
+    "DROP_NEAR_CONSTANT": true,
+    "NEAR_CONST_STD_TOL": 1e-08
+  },
+  "search_space": {
+    "C": [
+      1e-06,
+      2.1544346900318822e-06,
+      4.641588833612782e-06,
+      9.999999999999999e-06,
+      2.1544346900318823e-05,
+      4.641588833612772e-05,
+      0.0001,
+      0.00021544346900318823,
+      0.00046415888336127773,
+      0.001,
+      0.002154434690031882,
+      0.004641588833612777,
+      0.01,
+      0.021544346900318822,
+      0.046415888336127725,
+      0.1,
+      0.21544346900318823,
+      0.46415888336127725,
+      1.0,
+      2.154434690031882,
+      4.641588833612772,
+      10.0,
+      21.54434690031882,
+      46.41588833612773,
+      100.0
+    ],
+    "class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "baseline_params": {
+    "C": 1.0,
+    "class_weight": null
+  },
+  "fixed_model_params": {
+    "penalty": "l2",
+    "loss": "squared_hinge",
+    "dual": false,
+    "tol": 0.0001,
+    "max_iter": 20000
+  }
+}

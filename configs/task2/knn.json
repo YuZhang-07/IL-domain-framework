@@ -1,0 +1,54 @@
+{
+  "task": "task2",
+  "model": "knn",
+  "data": {
+    "path": "data/task2/proid_1_2_feature_labels_standard.csv"
+  },
+  "output": {
+    "root": "results/task2/knn"
+  },
+  "runtime": {
+    "n_jobs": -1
+  },
+  "parameters": {
+    "RANDOM_SEED": 42,
+    "N_FOLDS": 5,
+    "N_TRIALS": 50,
+    "INNER_N_SPLITS": 5,
+    "INNER_VALID_SIZE": 0.2,
+    "INNER_MAX_RETRIES": 50,
+    "DROP_NEAR_CONSTANT": true,
+    "NEAR_CONST_STD_TOL": 1e-08
+  },
+  "search_space": {
+    "n_neighbors": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      15,
+      21,
+      31,
+      41,
+      51
+    ],
+    "weights": [
+      "uniform",
+      "distance"
+    ],
+    "metric": [
+      "euclidean",
+      "manhattan",
+      "chebyshev"
+    ]
+  },
+  "baseline_params": {
+    "n_neighbors": 5,
+    "weights": "uniform",
+    "metric": "euclidean"
+  },
+  "fixed_model_params": {
+    "algorithm": "auto"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "task": "task2",
+  "model": "decision_tree",
+  "data": {
+    "path": "data/task2/proid_1_2_feature_labels_standard.csv"
+  },
+  "output": {
+    "root": "results/task2/decision_tree"
+  },
+  "runtime": {
+    "n_jobs": -1
+  },
+  "parameters": {
+    "RANDOM_SEED": 42,
+    "N_FOLDS": 5,
+    "N_TRIALS": 50,
+    "INNER_N_SPLITS": 5,
+    "INNER_VALID_SIZE": 0.2,
+    "INNER_MAX_RETRIES": 50,
+    "DROP_NEAR_CONSTANT": true,
+    "NEAR_CONST_STD_TOL": 1e-08
+  },
+  "search_space": {
+    "criterion": [
+      "gini",
+      "entropy"
+    ],
+    "max_depth": [
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      null
+    ],
+    "min_samples_split": [
+      2,
+      5,
+      10,
+      20
+    ],
+    "min_samples_leaf": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "max_features": [
+      null,
+      0.5,
+      0.75,
+      "sqrt"
+    ],
+    "class_weight": [
+      null,
+      "balanced"
+    ],
+    "ccp_alpha": [
+      0.0,
+      1e-05,
+      0.0001,
+      0.001
+    ]
+  },
+  "baseline_params": {
+    "criterion": "gini",
+    "max_depth": null,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_features": null,
+    "class_weight": null,
+    "ccp_alpha": 0.0
+  },
+  "fixed_model_params": {}
+}
