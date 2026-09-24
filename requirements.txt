@@ -1,0 +1,11 @@
+# Direct dependencies; this is NOT a lockfile for the historical paper environment.
+# For the environment exercised locally, see requirements-tested.txt.
+numpy
+pandas
+scikit-learn
+xgboost
+joblib
+matplotlib
+seaborn
+threadpoolctl
+# shap is optional and needed only when the existing LR RUN_SHAP flag is true.

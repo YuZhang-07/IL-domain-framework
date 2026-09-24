@@ -1,0 +1,30 @@
+# Python and local development
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local data/results are not included in this code-only release.
+/data/task1/*
+!/data/task1/README.md
+/results/
+*.joblib
+*.pkl
+*.pickle
+*.log
+
+# Credentials and private keys must not be newly tracked.
+.env
+.env.*
+.ssh/
+*.pem
+*.key
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
