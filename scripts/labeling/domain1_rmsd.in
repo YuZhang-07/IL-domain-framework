@@ -1,0 +1,14 @@
+parm cmp.prmtop
+
+trajin cmp_eq6.mdcrd 1 last 10
+trajin cmp_eq7.mdcrd 1 last 10
+trajin cmp_eq8.mdcrd 1 last 10
+trajin cmp_eq9.mdcrd 1 last 10
+trajin cmp_eq10.mdcrd 1 last 10
+
+autoimage
+
+reference 50_60_ils.pdb
+
+rms fit_domain1 :1-111@CA,C,N reference
+rms rmsd_domain2 :112-218@CA,C,N reference out ../domain1_ils_RMSD.csv

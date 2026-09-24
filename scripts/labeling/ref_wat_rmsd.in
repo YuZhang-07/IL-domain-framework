@@ -1,0 +1,12 @@
+parm cmp.prmtop
+parm ./cmp.prmtop
+
+trajin cmp_eq6.mdcrd 1 last 10
+trajin cmp_eq7.mdcrd 1 last 10
+trajin cmp_eq8.mdcrd 1 last 10
+trajin cmp_eq9.mdcrd 1 last 10
+trajin cmp_eq10.mdcrd 1 last 10
+
+autoimage
+reference ./50_60_wat.pdb parmindex 1
+rms mass ref_rmsd :1-218@CA,C,N reference out ../ref_wat_RMSD.csv
