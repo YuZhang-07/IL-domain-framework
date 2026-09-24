@@ -1,0 +1,17 @@
+# Single-system example; local paths are relative to the working directory.
+# Requires Bmim.frcmod, Bmim.mol2 and BMIMS_pro.pdb (not included).
+# The 67.0 box and original command order are preserved, not reconciled
+# with the 65.0 Packmol packing box. See the MD README.
+source leaprc.protein.ff14SB
+source leaprc.water.tip3p
+loadamberparams Bmim.frcmod
+BMI = loadmol2 Bmim.mol2
+com = loadpdb BMIMS_pro.pdb
+saveamberparm com com.prmtop com.inpcrd
+savepdb com com.pdb
+addions com Na+ 0
+addions com Cl- 0
+set com box {67.0, 67.0, 67.0}
+saveamberparm com cmp.prmtop cmp.inpcrd
+savepdb com cmp.pdb
+quit

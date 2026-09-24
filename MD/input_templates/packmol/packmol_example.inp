@@ -1,0 +1,21 @@
+# Single-system example, not a universal box for all proteins.
+# Paths are relative to the working directory where Packmol is invoked.
+# protein.pdb and water.pdb are local dependencies, not included here.
+# Copy the supplied structures/Bmim.pdb to that working directory.
+# The 65.0 packing box and all placement/number settings are preserved.
+tolerance 2.0
+filetype pdb
+output BMIMS_pro.pdb
+structure protein.pdb
+number 1
+fixed 30.0 30.0 30.0 30.0 30.0 30.0
+centerofmass
+end structure
+structure water.pdb
+number 5000
+inside box 0.0 0.0 0.0 65.0 65.0 65.0
+end structure
+structure Bmim.pdb
+number 100
+inside box 0.0 0.0 0.0 65.0 65.0 65.0
+end structure

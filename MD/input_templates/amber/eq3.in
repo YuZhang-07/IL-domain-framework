@@ -1,0 +1,23 @@
+Equilibration Stage in Explicit Solvent
+&cntrl
+  ntt=3,
+  gamma_ln=2.0,
+  ntc=2,
+  ntf=2,
+  ntb=2,
+  ntp=1,
+  taup=1.0,
+  cut=8.0,
+  dt=0.002,
+  nstlim=100000,
+  ig=-1,
+  ntwr=10000,
+  ntwx=500,
+  ntpr=500,
+  ioutfm=1,
+  iwrap=1,
+  igb=0,
+  irest=1,
+  ntx=5,
+  temp0=300.0,
+/

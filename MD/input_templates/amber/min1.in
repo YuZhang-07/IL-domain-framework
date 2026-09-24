@@ -1,0 +1,14 @@
+Energy Minimization Stage in Explicit Solvent
+&cntrl
+  imin=1,
+  ntb=1,
+  cut=8.0,
+  ntmin=1,
+  ncyc=4000,
+  maxcyc=8000,
+  igb=0,
+  saltcon=0.1,
+  ntr=1,
+  restraint_wt=2.0,
+  restraintmask=':1-25',
+/
