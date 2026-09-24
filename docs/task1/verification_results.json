@@ -1,0 +1,252 @@
+{
+  "basis": "Comparison to the seven uploaded source scripts; no research dataset supplied.",
+  "test_environment": {
+    "python": "3.13.5",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "xgboost": "3.1.3",
+      "joblib": "1.5.3",
+      "matplotlib": "3.10.8",
+      "seaborn": "0.13.2",
+      "threadpoolctl": "3.6.0"
+    }
+  },
+  "synthetic_dataset": {
+    "rows": 240,
+    "groups": 20,
+    "features": 7,
+    "constant_features": 1,
+    "both_labels_in_every_group": true,
+    "random_seed": 1729
+  },
+  "training_comparison": {
+    "outer_folds": 5,
+    "trials_per_fold": 3,
+    "seed": 42,
+    "numerical_threads": 1,
+    "xgboost_tree_cap": 12,
+    "xgboost_early_stopping_rounds": 3,
+    "comparison_rtol": 1e-12,
+    "comparison_atol": 1e-12
+  },
+  "all_model_results": [
+    {
+      "model": "xgboost",
+      "default_settings_identical": true,
+      "default_50_trial_sequence_identical_all_folds": true,
+      "default_estimator_params_identical": true,
+      "inner_split_indices_identical_all_folds": true,
+      "reduced_five_fold_workflow_completed": true,
+      "fold_metrics_and_selected_parameters_match": true,
+      "all_fold_prediction_tables_match": true,
+      "full_data_final_model_predictions_match": true,
+      "run_metadata_and_path_redaction_pass": true,
+      "elapsed_seconds": 2.26
+    },
+    {
+      "model": "logistic_regression",
+      "default_settings_identical": true,
+      "default_50_trial_sequence_identical_all_folds": true,
+      "default_estimator_params_identical": true,
+      "inner_split_indices_identical_all_folds": true,
+      "reduced_five_fold_workflow_completed": true,
+      "fold_metrics_and_selected_parameters_match": true,
+      "all_fold_prediction_tables_match": true,
+      "full_data_final_model_predictions_match": true,
+      "run_metadata_and_path_redaction_pass": true,
+      "elapsed_seconds": 3.53
+    },
+    {
+      "model": "gaussian_nb",
+      "default_settings_identical": true,
+      "default_50_trial_sequence_identical_all_folds": true,
+      "default_estimator_params_identical": true,
+      "inner_split_indices_identical_all_folds": true,
+      "reduced_five_fold_workflow_completed": true,
+      "fold_metrics_and_selected_parameters_match": true,
+      "all_fold_prediction_tables_match": true,
+      "full_data_final_model_predictions_match": true,
+      "run_metadata_and_path_redaction_pass": true,
+      "elapsed_seconds": 2.8
+    },
+    {
+      "model": "knn",
+      "default_settings_identical": true,
+      "default_50_trial_sequence_identical_all_folds": true,
+      "default_estimator_params_identical": true,
+      "inner_split_indices_identical_all_folds": true,
+      "reduced_five_fold_workflow_completed": true,
+      "fold_metrics_and_selected_parameters_match": true,
+      "all_fold_prediction_tables_match": true,
+      "full_data_final_model_predictions_match": true,
+      "run_metadata_and_path_redaction_pass": true,
+      "elapsed_seconds": 2.87
+    },
+    {
+      "model": "linear_svm",
+      "default_settings_identical": true,
+      "default_50_trial_sequence_identical_all_folds": true,
+      "default_estimator_params_identical": true,
+      "inner_split_indices_identical_all_folds": true,
+      "reduced_five_fold_workflow_completed": true,
+      "fold_metrics_and_selected_parameters_match": true,
+      "all_fold_prediction_tables_match": true,
+      "full_data_final_model_predictions_match": true,
+      "run_metadata_and_path_redaction_pass": true,
+      "elapsed_seconds": 2.88
+    },
+    {
+      "model": "decision_tree",
+      "default_settings_identical": true,
+      "default_50_trial_sequence_identical_all_folds": true,
+      "default_estimator_params_identical": true,
+      "inner_split_indices_identical_all_folds": true,
+      "reduced_five_fold_workflow_completed": true,
+      "fold_metrics_and_selected_parameters_match": true,
+      "all_fold_prediction_tables_match": true,
+      "full_data_final_model_predictions_match": true,
+      "run_metadata_and_path_redaction_pass": true,
+      "elapsed_seconds": 2.86
+    },
+    {
+      "model": "random_forest",
+      "default_settings_identical": true,
+      "default_50_trial_sequence_identical_all_folds": true,
+      "default_estimator_params_identical": true,
+      "inner_split_indices_identical_all_folds": true,
+      "reduced_five_fold_workflow_completed": true,
+      "fold_metrics_and_selected_parameters_match": true,
+      "all_fold_prediction_tables_match": true,
+      "full_data_final_model_predictions_match": true,
+      "run_metadata_and_path_redaction_pass": true,
+      "elapsed_seconds": 13.53
+    }
+  ],
+  "cli_checks": {
+    "help_all_seven": true,
+    "dry_run_all_seven_from_different_cwd": true,
+    "dry_run_creates_no_outputs": true,
+    "nonempty_output_rejected_without_modification": true,
+    "invalid_job_count_rejected": true,
+    "wrong_model_config_rejected": true,
+    "fresh_process_lr_training_completed": true
+  },
+  "bounded_public_file_pattern_scan": {
+    "scripts/training/task1/train_decision_tree.py": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "scripts/training/task1/train_random_forest.py": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "scripts/training/task1/train_xgboost.py": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "scripts/training/task1/train_linear_svm.py": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "scripts/training/task1/train_knn.py": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "scripts/training/task1/_runtime.py": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "scripts/training/task1/train_logistic_regression.py": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "scripts/training/task1/train_gaussian_nb.py": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "configs/task1/random_forest.json": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "configs/task1/gaussian_nb.json": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "configs/task1/linear_svm.json": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "configs/task1/xgboost.json": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "configs/task1/knn.json": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "configs/task1/decision_tree.json": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    },
+    "configs/task1/logistic_regression.json": {
+      "private_key_block": 0,
+      "github_token": 0,
+      "credential_assignment": 0,
+      "personal_absolute_path": 0,
+      "email_or_numeric_ip": 0
+    }
+  },
+  "not_verified": [
+    "Real research data and manuscript AUC values",
+    "All 50 candidates trained at full workload",
+    "Historical software environment",
+    "Cross-version or cross-platform bitwise reproducibility",
+    "Optional LR SHAP branch",
+    "Existing Git history or files outside supplied scripts"
+  ]
+}

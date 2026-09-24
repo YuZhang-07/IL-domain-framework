@@ -1,0 +1,10 @@
+# Runtime dependencies; no claim of historical version pinning.
+numpy
+pandas
+scipy
+scikit-learn
+xgboost
+joblib
+matplotlib
+seaborn
+threadpoolctl

@@ -1,0 +1,397 @@
+{
+  "task": "task2",
+  "real_research_data_supplied": false,
+  "shap_executed": false,
+  "scope": "Source-to-release preservation checks, not validation of manuscript metrics.",
+  "environment": {
+    "python": "3.13.5",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "xgboost": "3.1.3",
+      "joblib": "1.5.3",
+      "matplotlib": "3.10.8",
+      "seaborn": "0.13.2",
+      "threadpoolctl": "3.6.0"
+    }
+  },
+  "bootstrap": {
+    "xgboost": {
+      "status": "passed",
+      "folds": 5,
+      "clusters": 20,
+      "frames": 240,
+      "mixed_label_clusters": 20,
+      "threshold_ties_included": true,
+      "bootstrap_repetitions": 2000,
+      "max_absolute_difference": 0.0,
+      "compared_csvs": {
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0,
+        "recomputed_fold_metrics.csv": 0.0
+      },
+      "source_seconds": 3.499,
+      "release_seconds": 3.475
+    },
+    "decision_tree": {
+      "status": "passed",
+      "folds": 5,
+      "clusters": 20,
+      "frames": 240,
+      "mixed_label_clusters": 20,
+      "threshold_ties_included": true,
+      "bootstrap_repetitions": 2000,
+      "max_absolute_difference": 0.0,
+      "compared_csvs": {
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0,
+        "recomputed_fold_metrics.csv": 0.0
+      },
+      "source_seconds": 3.105,
+      "release_seconds": 3.115
+    },
+    "gaussian_nb": {
+      "status": "passed",
+      "folds": 5,
+      "clusters": 20,
+      "frames": 240,
+      "mixed_label_clusters": 20,
+      "threshold_ties_included": true,
+      "bootstrap_repetitions": 2000,
+      "max_absolute_difference": 0.0,
+      "compared_csvs": {
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0,
+        "recomputed_fold_metrics.csv": 0.0
+      },
+      "source_seconds": 3.458,
+      "release_seconds": 3.359
+    },
+    "knn": {
+      "status": "passed",
+      "folds": 5,
+      "clusters": 20,
+      "frames": 240,
+      "mixed_label_clusters": 20,
+      "threshold_ties_included": true,
+      "bootstrap_repetitions": 2000,
+      "max_absolute_difference": 0.0,
+      "compared_csvs": {
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0,
+        "recomputed_fold_metrics.csv": 0.0
+      },
+      "source_seconds": 3.572,
+      "release_seconds": 3.488
+    },
+    "linear_svm": {
+      "status": "passed",
+      "folds": 5,
+      "clusters": 20,
+      "frames": 240,
+      "mixed_label_clusters": 20,
+      "threshold_ties_included": true,
+      "bootstrap_repetitions": 2000,
+      "max_absolute_difference": 0.0,
+      "compared_csvs": {
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0,
+        "recomputed_fold_metrics.csv": 0.0
+      },
+      "source_seconds": 3.438,
+      "release_seconds": 3.399
+    },
+    "logistic_regression": {
+      "status": "passed",
+      "folds": 5,
+      "clusters": 20,
+      "frames": 240,
+      "mixed_label_clusters": 20,
+      "threshold_ties_included": true,
+      "bootstrap_repetitions": 2000,
+      "max_absolute_difference": 0.0,
+      "compared_csvs": {
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0,
+        "recomputed_fold_metrics.csv": 0.0
+      },
+      "source_seconds": 3.225,
+      "release_seconds": 3.198
+    },
+    "random_forest": {
+      "status": "passed",
+      "folds": 5,
+      "clusters": 20,
+      "frames": 240,
+      "mixed_label_clusters": 20,
+      "threshold_ties_included": true,
+      "bootstrap_repetitions": 2000,
+      "max_absolute_difference": 0.0,
+      "compared_csvs": {
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0,
+        "recomputed_fold_metrics.csv": 0.0
+      },
+      "source_seconds": 3.164,
+      "release_seconds": 3.307
+    }
+  },
+  "preparation": {
+    "remove_global": {
+      "status": "passed",
+      "rows": 240,
+      "source_features": 433,
+      "remaining_features": 425,
+      "removed_features": 8,
+      "max_absolute_difference": 0.0,
+      "labels_and_group_ids_preserved": true
+    },
+    "remove_interface": {
+      "status": "passed",
+      "rows": 240,
+      "source_features": 433,
+      "remaining_features": 428,
+      "removed_features": 5,
+      "max_absolute_difference": 0.0,
+      "labels_and_group_ids_preserved": true
+    },
+    "remove_contacts": {
+      "status": "passed",
+      "rows": 240,
+      "source_features": 433,
+      "remaining_features": 223,
+      "removed_features": 210,
+      "max_absolute_difference": 0.0,
+      "labels_and_group_ids_preserved": true
+    },
+    "remove_hbonds": {
+      "status": "passed",
+      "rows": 240,
+      "source_features": 433,
+      "remaining_features": 223,
+      "removed_features": 210,
+      "max_absolute_difference": 0.0,
+      "labels_and_group_ids_preserved": true
+    }
+  },
+  "ablation": {
+    "remove_global": {
+      "status": "passed",
+      "outer_folds": 5,
+      "candidate_trials_per_fold_test_only": 3,
+      "tree_cap_test_only": 60,
+      "early_stopping_rounds_test_only": 8,
+      "n_jobs_test_only": 1,
+      "compared_csvs": {
+        "cv_xgb_results.csv": 0.0,
+        "fold1_xgb_hyperparam_trials.csv": 0.0,
+        "fold1_xgb_predictions.csv": 0.0,
+        "fold2_xgb_hyperparam_trials.csv": 0.0,
+        "fold2_xgb_predictions.csv": 0.0,
+        "fold3_xgb_hyperparam_trials.csv": 0.0,
+        "fold3_xgb_predictions.csv": 0.0,
+        "fold4_xgb_hyperparam_trials.csv": 0.0,
+        "fold4_xgb_predictions.csv": 0.0,
+        "fold5_xgb_hyperparam_trials.csv": 0.0,
+        "fold5_xgb_predictions.csv": 0.0
+      },
+      "selected_parameter_jsons_equal": true,
+      "fold_removed_feature_lists_equal": true,
+      "final_model_probability_max_abs_difference": 0.0,
+      "max_absolute_csv_difference": 0.0,
+      "source_seconds": 10.954,
+      "release_seconds": 10.005,
+      "default_50_candidate_order_all_folds_equal": true,
+      "released_default_parameters_equal_source": true,
+      "default_estimator_parameters_equal_source": true,
+      "unchanged_function_asts_excluding_interface_adaptations": 12
+    },
+    "remove_interface": {
+      "status": "passed",
+      "outer_folds": 5,
+      "candidate_trials_per_fold_test_only": 3,
+      "tree_cap_test_only": 60,
+      "early_stopping_rounds_test_only": 8,
+      "n_jobs_test_only": 1,
+      "compared_csvs": {
+        "cv_xgb_results.csv": 0.0,
+        "fold1_xgb_hyperparam_trials.csv": 0.0,
+        "fold1_xgb_predictions.csv": 0.0,
+        "fold2_xgb_hyperparam_trials.csv": 0.0,
+        "fold2_xgb_predictions.csv": 0.0,
+        "fold3_xgb_hyperparam_trials.csv": 0.0,
+        "fold3_xgb_predictions.csv": 0.0,
+        "fold4_xgb_hyperparam_trials.csv": 0.0,
+        "fold4_xgb_predictions.csv": 0.0,
+        "fold5_xgb_hyperparam_trials.csv": 0.0,
+        "fold5_xgb_predictions.csv": 0.0
+      },
+      "selected_parameter_jsons_equal": true,
+      "fold_removed_feature_lists_equal": true,
+      "final_model_probability_max_abs_difference": 0.0,
+      "max_absolute_csv_difference": 0.0,
+      "source_seconds": 9.893,
+      "release_seconds": 10.197,
+      "default_50_candidate_order_all_folds_equal": true,
+      "released_default_parameters_equal_source": true,
+      "default_estimator_parameters_equal_source": true,
+      "unchanged_function_asts_excluding_interface_adaptations": 12
+    },
+    "remove_contacts": {
+      "status": "passed",
+      "outer_folds": 5,
+      "candidate_trials_per_fold_test_only": 3,
+      "tree_cap_test_only": 60,
+      "early_stopping_rounds_test_only": 8,
+      "n_jobs_test_only": 1,
+      "compared_csvs": {
+        "cv_xgb_results.csv": 0.0,
+        "fold1_xgb_hyperparam_trials.csv": 0.0,
+        "fold1_xgb_predictions.csv": 0.0,
+        "fold2_xgb_hyperparam_trials.csv": 0.0,
+        "fold2_xgb_predictions.csv": 0.0,
+        "fold3_xgb_hyperparam_trials.csv": 0.0,
+        "fold3_xgb_predictions.csv": 0.0,
+        "fold4_xgb_hyperparam_trials.csv": 0.0,
+        "fold4_xgb_predictions.csv": 0.0,
+        "fold5_xgb_hyperparam_trials.csv": 0.0,
+        "fold5_xgb_predictions.csv": 0.0
+      },
+      "selected_parameter_jsons_equal": true,
+      "fold_removed_feature_lists_equal": true,
+      "final_model_probability_max_abs_difference": 0.0,
+      "max_absolute_csv_difference": 0.0,
+      "source_seconds": 8.644,
+      "release_seconds": 8.309,
+      "default_50_candidate_order_all_folds_equal": true,
+      "released_default_parameters_equal_source": true,
+      "default_estimator_parameters_equal_source": true,
+      "unchanged_function_asts_excluding_interface_adaptations": 12
+    },
+    "remove_hbonds": {
+      "status": "passed",
+      "outer_folds": 5,
+      "candidate_trials_per_fold_test_only": 3,
+      "tree_cap_test_only": 60,
+      "early_stopping_rounds_test_only": 8,
+      "n_jobs_test_only": 1,
+      "compared_csvs": {
+        "cv_xgb_results.csv": 0.0,
+        "fold1_xgb_hyperparam_trials.csv": 0.0,
+        "fold1_xgb_predictions.csv": 0.0,
+        "fold2_xgb_hyperparam_trials.csv": 0.0,
+        "fold2_xgb_predictions.csv": 0.0,
+        "fold3_xgb_hyperparam_trials.csv": 0.0,
+        "fold3_xgb_predictions.csv": 0.0,
+        "fold4_xgb_hyperparam_trials.csv": 0.0,
+        "fold4_xgb_predictions.csv": 0.0,
+        "fold5_xgb_hyperparam_trials.csv": 0.0,
+        "fold5_xgb_predictions.csv": 0.0
+      },
+      "selected_parameter_jsons_equal": true,
+      "fold_removed_feature_lists_equal": true,
+      "final_model_probability_max_abs_difference": 0.0,
+      "max_absolute_csv_difference": 0.0,
+      "source_seconds": 8.488,
+      "release_seconds": 7.914,
+      "default_50_candidate_order_all_folds_equal": true,
+      "released_default_parameters_equal_source": true,
+      "default_estimator_parameters_equal_source": true,
+      "unchanged_function_asts_excluding_interface_adaptations": 12
+    }
+  },
+  "interfaces": {
+    "all_15_help_entrypoints": "passed",
+    "existing_bootstrap_output_refused": true,
+    "existing_csv_refused": true,
+    "existing_ablation_output_refused": true,
+    "cwd_relative_cli_paths_passed": true,
+    "repository_relative_config_paths_passed": true,
+    "dry_run_did_not_write": true,
+    "generated_json_external_directory_prefixes_redacted": true,
+    "collisions_with_previous_packages": {
+      "task1_github_release.zip": [],
+      "task2_github_release.zip": [],
+      "task1_evaluation_github_release.zip": []
+    }
+  },
+  "static": {
+    "xgboost": {
+      "unchanged_function_or_class_asts": 15,
+      "excluded": [
+        "parse_args",
+        "main"
+      ]
+    },
+    "decision_tree": {
+      "unchanged_function_or_class_asts": 15,
+      "excluded": [
+        "parse_args",
+        "main"
+      ]
+    },
+    "gaussian_nb": {
+      "unchanged_function_or_class_asts": 15,
+      "excluded": [
+        "parse_args",
+        "main"
+      ]
+    },
+    "knn": {
+      "unchanged_function_or_class_asts": 15,
+      "excluded": [
+        "parse_args",
+        "main"
+      ]
+    },
+    "linear_svm": {
+      "unchanged_function_or_class_asts": 15,
+      "excluded": [
+        "parse_args",
+        "main"
+      ]
+    },
+    "logistic_regression": {
+      "unchanged_function_or_class_asts": 15,
+      "excluded": [
+        "parse_args",
+        "main"
+      ]
+    },
+    "random_forest": {
+      "unchanged_function_or_class_asts": 15,
+      "excluded": [
+        "parse_args",
+        "main"
+      ]
+    }
+  },
+  "completed": true,
+  "security_review": {
+    "original_scripts_scanned": 15,
+    "released_python_scanned": 16,
+    "configuration_json_scanned": 11,
+    "pattern_categories": [
+      "private_key_block",
+      "github_token",
+      "cloud_access_key",
+      "credential_assignment",
+      "personal_absolute_path",
+      "private_ipv4",
+      "explicit_internal_node",
+      "email_address"
+    ],
+    "findings": [],
+    "limits": "Limited pattern review, not a guarantee. External directory prefixes in generated JSON were tested; raw console output, tracebacks, unrelated files, data content and Git history are outside scope."
+  },
+  "release_finalized_at_utc": "2026-09-23T15:03:21.100150+00:00"
+}

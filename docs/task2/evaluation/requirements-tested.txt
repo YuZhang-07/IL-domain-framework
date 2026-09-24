@@ -1,0 +1,11 @@
+# Observed Task 2 evaluation packaging-test environment.
+# Not the historical paper environment or a complete transitive lock.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+scikit-learn==1.8.0
+xgboost==3.1.3
+joblib==1.5.3
+matplotlib==3.10.8
+seaborn==0.13.2
+threadpoolctl==3.6.0

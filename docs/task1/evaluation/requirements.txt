@@ -1,0 +1,11 @@
+# Dependencies for this evaluation add-on; no SHAP implementation is bundled.
+# See requirements-tested.txt for the locally tested versions.
+numpy
+pandas
+scipy
+scikit-learn
+xgboost
+joblib
+matplotlib
+seaborn
+threadpoolctl

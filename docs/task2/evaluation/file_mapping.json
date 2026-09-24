@@ -1,0 +1,111 @@
+{
+  "task": "task2",
+  "files": [
+    {
+      "source_file": "bootstrap_ci_xgb_oof(4).py",
+      "source_sha256": "44500b1f0f99234b4820be9e5a502005b6c10483211ac60f1de98bc593b25e3f",
+      "released_file": "scripts/evaluation/task2/bootstrap/bootstrap_ci_xgboost.py",
+      "released_sha256": "32215258932a5fb96082251af5d3b11d46a5950468776491b7f6552d2565900e",
+      "configuration": "configs/task2/evaluation/bootstrap/xgboost.json"
+    },
+    {
+      "source_file": "bootstrap_ci_decision_tree_oof(1).py",
+      "source_sha256": "8cb3328b34715b6b9bf2cd60ff696c8b3d8bb802c17b9dab5e052f57c3889c3d",
+      "released_file": "scripts/evaluation/task2/bootstrap/bootstrap_ci_decision_tree.py",
+      "released_sha256": "4461e35b49d23cea60a2e668ada48b205ff57666c1ca07e4745c5ae9d7e16356",
+      "configuration": "configs/task2/evaluation/bootstrap/decision_tree.json"
+    },
+    {
+      "source_file": "bootstrap_ci_gaussian_nb_oof(1).py",
+      "source_sha256": "79f3e68f5a0c0fd789ebf41b6b28b9e0bddad0ef80f7977546e0c530a209cddb",
+      "released_file": "scripts/evaluation/task2/bootstrap/bootstrap_ci_gaussian_nb.py",
+      "released_sha256": "ae6fdcc8eec97f47e0d459b68248a57cc1c04d0ed572a453605415b5ad40c66a",
+      "configuration": "configs/task2/evaluation/bootstrap/gaussian_nb.json"
+    },
+    {
+      "source_file": "bootstrap_ci_knn_oof(1).py",
+      "source_sha256": "cc6e6b27b5d7fec74ce90213a7a319c89167d00db24769ee3437ad23808f4d10",
+      "released_file": "scripts/evaluation/task2/bootstrap/bootstrap_ci_knn.py",
+      "released_sha256": "707cba8512766c4d1be6957dadec22417294ef4c2a42fd39afc5abc9b5496f31",
+      "configuration": "configs/task2/evaluation/bootstrap/knn.json"
+    },
+    {
+      "source_file": "bootstrap_ci_linear_svm_oof(1).py",
+      "source_sha256": "8eac1858588a8f550e8f730de3b9bb29a7f689b87843a711d139717e0ee55c0c",
+      "released_file": "scripts/evaluation/task2/bootstrap/bootstrap_ci_linear_svm.py",
+      "released_sha256": "2a45e02a872e109f54973a7719187d1fce008c6d12b4025177f8c3eff69dba1b",
+      "configuration": "configs/task2/evaluation/bootstrap/linear_svm.json"
+    },
+    {
+      "source_file": "bootstrap_ci_logistic_regression_oof(1).py",
+      "source_sha256": "fe6eac53e0aa409e5b9b37ff3f526afac3e0d7cf8a71d6b4101fc7fbd69263e1",
+      "released_file": "scripts/evaluation/task2/bootstrap/bootstrap_ci_logistic_regression.py",
+      "released_sha256": "bd3a0e5e808d551a83edbec3dd91d2f61471c5826b0f104b66e40b0fdd48b3a0",
+      "configuration": "configs/task2/evaluation/bootstrap/logistic_regression.json"
+    },
+    {
+      "source_file": "bootstrap_ci_random_forest_oof(1).py",
+      "source_sha256": "55056635b34e6c1bc347706fbdf744bd43bb423af08122d056dd9ab92255ff04",
+      "released_file": "scripts/evaluation/task2/bootstrap/bootstrap_ci_random_forest.py",
+      "released_sha256": "3dc14e9b46e903713f3918db61abdbdc1ff1072923364bf73010e05686910784",
+      "configuration": "configs/task2/evaluation/bootstrap/random_forest.json"
+    },
+    {
+      "source_file": "remove_W(2).py",
+      "source_sha256": "8c192f7cc0ad0cf1631dfd18084cc220d68f5e27a18c775d3cb7cc9c8ace5452",
+      "released_file": "scripts/evaluation/task2/ablation/prepare_remove_global.py",
+      "released_sha256": "60784907ba274b47c7abc5f79a5f1d683cd978b094593a98849d22066267fc76",
+      "configuration": "configs/task2/evaluation/ablation/remove_global.json"
+    },
+    {
+      "source_file": "fin_12_xgboost_removeW(1).py",
+      "source_sha256": "bfdc61bf5a00fac2da6555c0fc07b513eae9f23a256a2bf42dfd335f5f291a6c",
+      "released_file": "scripts/evaluation/task2/ablation/run_xgboost_remove_global.py",
+      "released_sha256": "2aefb4234148864bf58f43bda01214ab75963e61502fe429e157f178d30a5b0c",
+      "configuration": "configs/task2/evaluation/ablation/remove_global.json"
+    },
+    {
+      "source_file": "removeInter(1).py",
+      "source_sha256": "6026ee3017efcf4c39fa8312e55deadb45851f347d9c309b0cca301139d8e303",
+      "released_file": "scripts/evaluation/task2/ablation/prepare_remove_interface.py",
+      "released_sha256": "84603c349f235bd07dca3ee5da824a2413787d36826863584faace821475cb3a",
+      "configuration": "configs/task2/evaluation/ablation/remove_interface.json"
+    },
+    {
+      "source_file": "fin_12_xgboost_remove_Inter(1).py",
+      "source_sha256": "7613d8fcc926c2fdc1e9f05dce754539d46920cede3ec9af70f29d9123db7c10",
+      "released_file": "scripts/evaluation/task2/ablation/run_xgboost_remove_interface.py",
+      "released_sha256": "99f8cde2865d3b86dbc66d71639e6a9ff73817e2a911a660ba82464639edbc2d",
+      "configuration": "configs/task2/evaluation/ablation/remove_interface.json"
+    },
+    {
+      "source_file": "remove_resn(1).py",
+      "source_sha256": "0e50dafeb05ae0186e68ecec36d22b88d11a6822f107620bec099c48502a2d9f",
+      "released_file": "scripts/evaluation/task2/ablation/prepare_remove_contacts.py",
+      "released_sha256": "3978dfa62507c92136aef7e02c02aa2ae3ded20715e77507187f13da941b1c16",
+      "configuration": "configs/task2/evaluation/ablation/remove_contacts.json"
+    },
+    {
+      "source_file": "fin_12_xgboost_remove_resn(1).py",
+      "source_sha256": "3400a213c6ace16b8e6ef0a1a560fe0360c5acf58edd78028c50936161e1a720",
+      "released_file": "scripts/evaluation/task2/ablation/run_xgboost_remove_contacts.py",
+      "released_sha256": "22292fc49aae21cd0c15680e37ca0b46870e212f5d725503b9801946730abdd8",
+      "configuration": "configs/task2/evaluation/ablation/remove_contacts.json"
+    },
+    {
+      "source_file": "remove_hbond(1).py",
+      "source_sha256": "d99e7c2abee2203b01ae673890a013fd680d5202a220683d959ddd67ab3605e5",
+      "released_file": "scripts/evaluation/task2/ablation/prepare_remove_hbonds.py",
+      "released_sha256": "213f82a4cc900dd93fec9baf9e65acd40c80713ed6f9179d9a4ef845c05c6414",
+      "configuration": "configs/task2/evaluation/ablation/remove_hbonds.json"
+    },
+    {
+      "source_file": "fin_12_xgboost_remove_hbond(1).py",
+      "source_sha256": "96077725f242c3547d7650ca5920dcfc7e477a217bad4d9f3974e137ac76286f",
+      "released_file": "scripts/evaluation/task2/ablation/run_xgboost_remove_hbonds.py",
+      "released_sha256": "18085569a9b52ee2a5cc4cf87519da35019256f52d59520639afd901297b5c4f",
+      "configuration": "configs/task2/evaluation/ablation/remove_hbonds.json"
+    }
+  ],
+  "shap_implementation_supplied": false
+}

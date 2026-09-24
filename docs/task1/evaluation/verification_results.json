@@ -1,0 +1,340 @@
+{
+  "scope": "Small synthetic-data equivalence checks; no manuscript data or SHAP execution.",
+  "bootstrap": {
+    "xgboost": {
+      "original_statistical_function_AST_unchanged": true,
+      "n_folds": 5,
+      "n_proteins": 20,
+      "n_frames": 240,
+      "within_protein_mixed_labels": true,
+      "includes_score_threshold_ties": true,
+      "n_bootstrap": 2000,
+      "seed": 42,
+      "confidence": 0.95,
+      "compared_csv_max_absolute_difference": {
+        "recomputed_fold_metrics.csv": 0.0,
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0
+      },
+      "input_files_unchanged": true,
+      "nonempty_output_rejected": true
+    },
+    "decision_tree": {
+      "original_statistical_function_AST_unchanged": true,
+      "n_folds": 5,
+      "n_proteins": 20,
+      "n_frames": 240,
+      "within_protein_mixed_labels": true,
+      "includes_score_threshold_ties": true,
+      "n_bootstrap": 2000,
+      "seed": 42,
+      "confidence": 0.95,
+      "compared_csv_max_absolute_difference": {
+        "recomputed_fold_metrics.csv": 0.0,
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0
+      },
+      "input_files_unchanged": true,
+      "nonempty_output_rejected": true
+    },
+    "gaussian_nb": {
+      "original_statistical_function_AST_unchanged": true,
+      "n_folds": 5,
+      "n_proteins": 20,
+      "n_frames": 240,
+      "within_protein_mixed_labels": true,
+      "includes_score_threshold_ties": true,
+      "n_bootstrap": 2000,
+      "seed": 42,
+      "confidence": 0.95,
+      "compared_csv_max_absolute_difference": {
+        "recomputed_fold_metrics.csv": 0.0,
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0
+      },
+      "input_files_unchanged": true,
+      "nonempty_output_rejected": true
+    },
+    "knn": {
+      "original_statistical_function_AST_unchanged": true,
+      "n_folds": 5,
+      "n_proteins": 20,
+      "n_frames": 240,
+      "within_protein_mixed_labels": true,
+      "includes_score_threshold_ties": true,
+      "n_bootstrap": 2000,
+      "seed": 42,
+      "confidence": 0.95,
+      "compared_csv_max_absolute_difference": {
+        "recomputed_fold_metrics.csv": 0.0,
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0
+      },
+      "input_files_unchanged": true,
+      "nonempty_output_rejected": true
+    },
+    "linear_svm": {
+      "original_statistical_function_AST_unchanged": true,
+      "n_folds": 5,
+      "n_proteins": 20,
+      "n_frames": 240,
+      "within_protein_mixed_labels": true,
+      "includes_score_threshold_ties": true,
+      "n_bootstrap": 2000,
+      "seed": 42,
+      "confidence": 0.95,
+      "compared_csv_max_absolute_difference": {
+        "recomputed_fold_metrics.csv": 0.0,
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0
+      },
+      "input_files_unchanged": true,
+      "nonempty_output_rejected": true
+    },
+    "logistic_regression": {
+      "original_statistical_function_AST_unchanged": true,
+      "n_folds": 5,
+      "n_proteins": 20,
+      "n_frames": 240,
+      "within_protein_mixed_labels": true,
+      "includes_score_threshold_ties": true,
+      "n_bootstrap": 2000,
+      "seed": 42,
+      "confidence": 0.95,
+      "compared_csv_max_absolute_difference": {
+        "recomputed_fold_metrics.csv": 0.0,
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0
+      },
+      "input_files_unchanged": true,
+      "nonempty_output_rejected": true
+    },
+    "random_forest": {
+      "original_statistical_function_AST_unchanged": true,
+      "n_folds": 5,
+      "n_proteins": 20,
+      "n_frames": 240,
+      "within_protein_mixed_labels": true,
+      "includes_score_threshold_ties": true,
+      "n_bootstrap": 2000,
+      "seed": 42,
+      "confidence": 0.95,
+      "compared_csv_max_absolute_difference": {
+        "recomputed_fold_metrics.csv": 0.0,
+        "bootstrap_ci_summary.csv": 0.0,
+        "bootstrap_distribution.csv": 0.0,
+        "protein_label_composition.csv": 0.0
+      },
+      "input_files_unchanged": true,
+      "nonempty_output_rejected": true
+    }
+  },
+  "preparation": {
+    "remove_global": {
+      "removed_columns": 8,
+      "remaining_features": 425,
+      "n_rows": 240,
+      "remaining_values_and_order_equal_to_source_script": true,
+      "id_and_labels_preserved": true,
+      "no_overwrite_guard": true
+    },
+    "remove_interface": {
+      "removed_columns": 5,
+      "remaining_features": 428,
+      "n_rows": 240,
+      "remaining_values_and_order_equal_to_source_script": true,
+      "id_and_labels_preserved": true,
+      "no_overwrite_guard": true
+    },
+    "remove_contacts": {
+      "removed_columns": 210,
+      "remaining_features": 223,
+      "n_rows": 240,
+      "remaining_values_and_order_equal_to_source_script": true,
+      "id_and_labels_preserved": true,
+      "no_overwrite_guard": true
+    },
+    "remove_hbonds": {
+      "removed_columns": 210,
+      "remaining_features": 223,
+      "n_rows": 240,
+      "remaining_values_and_order_equal_to_source_script": true,
+      "id_and_labels_preserved": true,
+      "no_overwrite_guard": true
+    }
+  },
+  "ablation": {
+    "remove_global": {
+      "default_parameters_equal_to_source": true,
+      "default_search_key_order_equal": true,
+      "all_50_candidates_equal_for_seeds_43_to_47": true,
+      "test_folds": 5,
+      "test_trials_per_fold": 3,
+      "test_max_estimators": 60,
+      "test_early_stopping_rounds": 8,
+      "test_n_jobs": 1,
+      "test_n_rows": 240,
+      "test_features": 425,
+      "compared_csv_max_absolute_difference": {
+        "fold4_xgb_predictions.csv": 0.0,
+        "fold3_xgb_hyperparam_trials.csv": 0.0,
+        "fold1_xgb_predictions.csv": 0.0,
+        "fold1_xgb_hyperparam_trials.csv": 0.0,
+        "fold2_xgb_predictions.csv": 0.0,
+        "fold4_xgb_hyperparam_trials.csv": 0.0,
+        "fold2_xgb_hyperparam_trials.csv": 0.0,
+        "fold5_xgb_hyperparam_trials.csv": 0.0,
+        "fold3_xgb_predictions.csv": 0.0,
+        "cv_xgb_results.csv": 0.0,
+        "fold5_xgb_predictions.csv": 0.0
+      },
+      "best_parameters_equal": true,
+      "final_model_probability_max_absolute_difference": 0.0
+    },
+    "remove_interface": {
+      "default_parameters_equal_to_source": true,
+      "default_search_key_order_equal": true,
+      "all_50_candidates_equal_for_seeds_43_to_47": true,
+      "test_folds": 5,
+      "test_trials_per_fold": 3,
+      "test_max_estimators": 60,
+      "test_early_stopping_rounds": 8,
+      "test_n_jobs": 1,
+      "test_n_rows": 240,
+      "test_features": 428,
+      "compared_csv_max_absolute_difference": {
+        "fold4_xgb_predictions.csv": 0.0,
+        "fold3_xgb_hyperparam_trials.csv": 0.0,
+        "fold1_xgb_predictions.csv": 0.0,
+        "fold1_xgb_hyperparam_trials.csv": 0.0,
+        "fold2_xgb_predictions.csv": 0.0,
+        "fold4_xgb_hyperparam_trials.csv": 0.0,
+        "fold2_xgb_hyperparam_trials.csv": 0.0,
+        "fold5_xgb_hyperparam_trials.csv": 0.0,
+        "fold3_xgb_predictions.csv": 0.0,
+        "cv_xgb_results.csv": 0.0,
+        "fold5_xgb_predictions.csv": 0.0
+      },
+      "best_parameters_equal": true,
+      "final_model_probability_max_absolute_difference": 0.0
+    },
+    "remove_contacts": {
+      "default_parameters_equal_to_source": true,
+      "default_search_key_order_equal": true,
+      "all_50_candidates_equal_for_seeds_43_to_47": true,
+      "test_folds": 5,
+      "test_trials_per_fold": 3,
+      "test_max_estimators": 60,
+      "test_early_stopping_rounds": 8,
+      "test_n_jobs": 1,
+      "test_n_rows": 240,
+      "test_features": 223,
+      "compared_csv_max_absolute_difference": {
+        "fold4_xgb_predictions.csv": 0.0,
+        "fold3_xgb_hyperparam_trials.csv": 0.0,
+        "fold1_xgb_predictions.csv": 0.0,
+        "fold1_xgb_hyperparam_trials.csv": 0.0,
+        "fold2_xgb_predictions.csv": 0.0,
+        "fold4_xgb_hyperparam_trials.csv": 0.0,
+        "fold2_xgb_hyperparam_trials.csv": 0.0,
+        "fold5_xgb_hyperparam_trials.csv": 0.0,
+        "fold3_xgb_predictions.csv": 0.0,
+        "cv_xgb_results.csv": 0.0,
+        "fold5_xgb_predictions.csv": 0.0
+      },
+      "best_parameters_equal": true,
+      "final_model_probability_max_absolute_difference": 0.0
+    },
+    "remove_hbonds": {
+      "default_parameters_equal_to_source": true,
+      "default_search_key_order_equal": true,
+      "all_50_candidates_equal_for_seeds_43_to_47": true,
+      "test_folds": 5,
+      "test_trials_per_fold": 3,
+      "test_max_estimators": 60,
+      "test_early_stopping_rounds": 8,
+      "test_n_jobs": 1,
+      "test_n_rows": 240,
+      "test_features": 223,
+      "compared_csv_max_absolute_difference": {
+        "fold4_xgb_predictions.csv": 0.0,
+        "fold3_xgb_hyperparam_trials.csv": 0.0,
+        "fold1_xgb_predictions.csv": 0.0,
+        "fold1_xgb_hyperparam_trials.csv": 0.0,
+        "fold2_xgb_predictions.csv": 0.0,
+        "fold4_xgb_hyperparam_trials.csv": 0.0,
+        "fold2_xgb_hyperparam_trials.csv": 0.0,
+        "fold5_xgb_hyperparam_trials.csv": 0.0,
+        "fold3_xgb_predictions.csv": 0.0,
+        "cv_xgb_results.csv": 0.0,
+        "fold5_xgb_predictions.csv": 0.0
+      },
+      "best_parameters_equal": true,
+      "final_model_probability_max_absolute_difference": 0.0
+    }
+  },
+  "interface": {
+    "source_full_csv_unchanged": true,
+    "dry_run_no_output_directory": true,
+    "explicit_paths_tested_from_outside_repository": true,
+    "help_entrypoints_passed": [
+      "scripts/evaluation/task1/ablation/prepare_remove_contacts.py",
+      "scripts/evaluation/task1/ablation/prepare_remove_global.py",
+      "scripts/evaluation/task1/ablation/prepare_remove_hbonds.py",
+      "scripts/evaluation/task1/ablation/prepare_remove_interface.py",
+      "scripts/evaluation/task1/ablation/run_xgboost_remove_contacts.py",
+      "scripts/evaluation/task1/ablation/run_xgboost_remove_global.py",
+      "scripts/evaluation/task1/ablation/run_xgboost_remove_hbonds.py",
+      "scripts/evaluation/task1/ablation/run_xgboost_remove_interface.py",
+      "scripts/evaluation/task1/bootstrap/bootstrap_ci_decision_tree.py",
+      "scripts/evaluation/task1/bootstrap/bootstrap_ci_gaussian_nb.py",
+      "scripts/evaluation/task1/bootstrap/bootstrap_ci_knn.py",
+      "scripts/evaluation/task1/bootstrap/bootstrap_ci_linear_svm.py",
+      "scripts/evaluation/task1/bootstrap/bootstrap_ci_logistic_regression.py",
+      "scripts/evaluation/task1/bootstrap/bootstrap_ci_random_forest.py",
+      "scripts/evaluation/task1/bootstrap/bootstrap_ci_xgboost.py"
+    ],
+    "release_json_external_directory_prefixes_redacted": true,
+    "overlay_file_collisions": {
+      "task1_github_release.zip": [],
+      "task2_github_release.zip": []
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "xgboost": "3.1.3",
+      "joblib": "1.5.3",
+      "matplotlib": "3.10.8",
+      "seaborn": "0.13.2",
+      "threadpoolctl": "3.6.0"
+    }
+  },
+  "sensitive_pattern_review": {
+    "source_script_count": 15,
+    "published_python_count": 16,
+    "published_json_config_count": 11,
+    "patterns_checked": [
+      "private_key_header",
+      "github_token",
+      "cloud_access_key",
+      "slack_token",
+      "credential_assignment",
+      "personal_or_internal_absolute_path",
+      "embedded_network_address",
+      "internal_node_name"
+    ],
+    "findings": [],
+    "limitation": "Heuristic review of these files only. Not a guarantee about other files, logs, Git history, filenames or third-party data rights."
+  }
+}

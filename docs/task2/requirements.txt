@@ -1,0 +1,11 @@
+# Direct requirements for the seven Task 2 training entrypoints.
+# Same direct packages as the supplied Task 1 release; not a complete lockfile.
+numpy
+pandas
+scikit-learn
+xgboost
+joblib
+matplotlib
+seaborn
+threadpoolctl
+# shap is optional; it is imported only when LR RUN_SHAP is enabled.
