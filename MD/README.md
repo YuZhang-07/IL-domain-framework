@@ -138,6 +138,9 @@ The ten `eq2.in` segments use the supplied `nstlim=5000000, dt=0.002`.
 Trajectory-writing arguments and frequencies remain enabled during local runs;
 only publication of the resulting trajectory files is excluded.
 
+##snapshots
+The MD/snapshots/ directory contains selected PDB structural snapshots extracted from the molecular dynamics simulations under water and BmimCl conditions. These structures are provided for visualization and structural inspection and do not represent the complete MD trajectories.
+
 ## Publication and checks
 
 The `md/.gitignore` allowlist includes only the 15 release files. It does not
